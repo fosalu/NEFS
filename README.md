@@ -1,5 +1,7 @@
 # NEFS
 NEFS (NFC Exchange File System) is a rudimentary file system for NFC devices that support NDEF storage.
 
-This repository is meant as a way to keep track of the NEFS specification, it's versions and their implementations.
+This repository is meant as a way to keep track of the NEFS specification, it's versions and their implementations.\
 Feel free to include this repository in your project when implementing NEFS.
+
+A working example of an NEFS implementation can be found here: https://github.com/fosalu/NEFSplorer
