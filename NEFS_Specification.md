@@ -1,7 +1,7 @@
 # NEFS Specification v.2.0.0
 
 ## 1. Definition
-NEFS (NFC Exchange File System) is a rudimentary file system for NFC devices. It is based on the NDEF (NFC Data Exchange Format) standard and uses the NDEF message format as a foundation for its entry based, hierarchical file system structure. This allows the NEFS file system to be compatible with every NFC device that supports NDEF storage. Each file system entry is stored as a separate NDEF record of either the “Well Known Type (TNF 1)” or the “Unknown type record (TNF 5)” depending on whether its content is text based or a file’s binary data.
+NEFS (NFC Exchange File System) is a rudimentary file system for NFC devices. It is based on the NDEF (NFC Data Exchange Format) standard and uses the NDEF message format as a foundation for its entry based, hierarchical file system structure. This allows the NEFS file system to be compatible with every NFC device that supports NDEF storage. Each file system entry is stored as a separate NDEF record of either the “Well Known Type (TNF 1)” or the “Unknown type record (TNF 5)” depending on whether its content is text based or consists of binary file data.
 
 ## 2. Entry types
 
@@ -24,7 +24,7 @@ name that can be freely defined by the user.
  - Every filename entry is immediately followed by it’s corresponding data entry.
 
 ### Data Entry
- - The data entry consists of a file’s binary data, stored as an “Unknown type record (TNF 5)”.
+ - The data entry consists of binary file data, stored as an “Unknown type record (TNF 5)”.
 
 ### File System Tender
  - The file system tender signals the end of the file system.
